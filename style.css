@@ -6,6 +6,9 @@
 	clear: both;
 	height: 0;
 }
+.geo_di{
+	margin: 0;
+}
 .geo_di li, .geo_di *{
 	list-style: none;
 	margin: 0;
@@ -15,7 +18,7 @@
 }
 .geo_di li{
 	display: inline-block;
-	margin-bottom:1.5em;
+	margin:0 0 1.5em 0 !important;
 	background: #e0e0e0;
 	padding:20px;
 	border-bottom: solid 1px #fff;
@@ -23,8 +26,14 @@
 }
 
 @media screen and (min-width: 640px){
-	.geo_di li{width: 50%;}	
+	.geo_di li{width: 49%;}	
+	.geo_di li:nth-child(2n){
+		margin-left:2%!important;
+	}
 }
 @media screen and (max-width: 640px){
-	.geo_di li{width: 100%;}	
+	.geo_di li{width: 100%;}
+	.geo_di li:nth-child(2n){
+		margin-left:0!important;
+	}
 }
