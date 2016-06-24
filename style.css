@@ -1,0 +1,20 @@
+.geo_di li, .geo_di *{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+.geo_di li{
+	display: inline-block;
+	margin-bottom:1.5em;
+	background: #e0e0e0;
+	padding:20px;
+	border-bottom: solid 1px #fff;
+}
+
+@media screen and (min-width: 640px){
+.geo_di li{width: 50%;}	
+}@media screen and (max-width: 640px){
+.geo_di li{width: 100%;}	
+}
